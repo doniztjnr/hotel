@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospedagem em hotel.">
+    <meta name="keywords" content="Hotel cinco estrelas confortavel e luxuoso.">
+    </metaname>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Hotel</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="Hotel logo" width="40" height="auto">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="row d-flex flex-column-reverse flex-md-row align-items-md-center">
+            <div class="col-md-4">
+                <div class="card m-2" style="width: auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">Sinta o conforto acolhedor de nossas hospedagens.</h5>
+                        <p class="card-text">Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+                        <a href="#" class="btn btn-primary btn-sm rounded-pill mt-4 py-1 px-4">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="m-2">
+                    <img src="img/bedroom.jpg" class="img-fluid" alt="Hotel quarto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container text-center">
+        <div class="row">
+            <div class="mx-2 mt-4 mb-2">
+                <h5 class="text-start text-md-center">POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS?</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="d-flex">
+                    <div class="ms-md-5">
+                        <img src="icons/cofee-cup.png" alt="Copo de café" width="40px" height="auto">
+                    </div>
+                    <div class="text-start ms-3">
+                        <h5>Delicioso café da manhã</h5>
+                        <p>Incluso em todas as diárias</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="d-flex">
+                    <div class="ms-md-5">
+                        <img src="icons/map-pin.png" alt="Ponto no mapa" width="40px" height="auto">
+                    </div>
+                    <div class="text-start ms-3">
+                        <h5>Fácil acesso</h5>
+                        <p>Perto dos principais pontos turísticos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container border border-2 p-md-4">
+        <div class="row">
+            <div class="col">
+                <div class="mx-2 mt-3">
+                    <h6 class="text-center">NOSSOS QUARTOS</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <img src="img/bedroom-single.jpg" class="img-thumbnail" alt="Suíte Solteiro">
+            </div>
+            <div class="col-md">
+                <img src="img/bedroom-couple.jpg" class="img-thumbnail" alt="Suíte Casal">
+            </div>
+            <div class="col-md">
+                <img src="img/bedroom-master.jpg" class="img-thumbnail" alt="Suíte Master">
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 py-4 border border-2 p-md-4" style="background-color: #F2F2F2;">
+        <form action="./reserva-informacoes.html" method="post" class="container" id="hr-form">
+            <div class="row">
+                <div class="col-md">
+                    <h5>FAÇA SUA RESERVA</h5>
+                    <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a
+                        disponibilidade e
+                        repassando detalhes da reserva.</p>
+                </div>
+                <div class="col-md">
+                    <div class="mb-3">
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputNome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDataEntrada" class="form-label">Data de entrada</label>
+                        <input type="date" class="form-control" id="inputDataEntrada" name="entrada" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTextarea">Observações</label>
+                        <textarea class="form-control" id="inputTextarea" style="height: 100px"
+                            name="observacoes"></textarea>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="inputEmail" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDataSaida" class="form-label">Data de saída</label>
+                        <input type="date" class="form-control" id="inputDataSaida" name="saida" required>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mb-3 pe-2">
+                            <label for="inputAdultos" class="form-label">Adultos</label>
+                            <input type="number" class="form-control" id="inputAdultos" name="adultos" required>
+                        </div>
+                        <div class="mb-3 ps-2">
+                            <label for="inputCriancas" class="form-label">Crianças</label>
+                            <input type="number" class="form-control" id="inputCriancas" name="criancas" required>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-sm rounded-pill">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/hotel.js"></script>
+</body>
+
+</html>
